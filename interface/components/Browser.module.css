@@ -1,0 +1,12 @@
+.table {
+    font-size: 0.8em;
+    margin-top: 0;
+    position: absolute;
+}
+
+.select {
+    position: absolute;
+    z-index: 9999;
+    margin-top: -50px;
+    width: 200px;
+}

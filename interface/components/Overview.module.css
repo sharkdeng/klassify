@@ -1,0 +1,48 @@
+.total {
+    padding: 10px 20px;
+    font-size: 4em;
+    font-weight: 100;
+    border-bottom: 1px solid #efefef;
+    color: #448bcd;
+
+
+ -webkit-transition: all 300ms linear;
+}
+
+.totalTitle {
+    font-size: 0.5em;
+    display: inline-block;
+    margin-left: 5px;
+    color: gray;
+}
+
+.loading {
+    color: gray;
+    padding: 120px;
+    text-align: center;
+}
+
+.value {
+    display: inline-block;
+}
+
+.endpoints {
+    margin-top: 30px;
+    padding: 15px;
+    color: gray;
+}
+
+.endpoints ul {
+    margin: 15px 0;
+    padding: 0;
+}
+
+.endpoints li {
+    padding: 4px 20px;
+    list-style: none;
+    color: #a7a7a7;
+}
+
+.highlight {
+    background: yellow;
+}

@@ -6,13 +6,6 @@ import {Table, Column, Cell} from 'fixed-data-table';
 import styles from './Browser.module.css';
 import store from '../store';
 
-const rows = [
-  ['a1', 'b1', 'c1'],
-  ['a2', 'b2', 'c2'],
-  ['a3', 'b3', 'c3']
-  // .... and more
-];
-
 
 class Trainer extends Component {
   state = {

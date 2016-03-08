@@ -6,6 +6,7 @@ from tornado.gen import Task, coroutine
 from tornado.web import RequestHandler, HTTPError
 from tornado.websocket import WebSocketHandler
 from tornadoredis import Client
+from backend.tokenizer import tokenize
 
 Infinity = float('inf')
 
@@ -62,7 +63,7 @@ class TrainerHandler(BaseHandler):
             label
         )
 
-        counter = collections.Counter(text.split())
+        counter = collections.Counter(tokenize(text))
 
         for key, value in counter.items():
             yield Task(
@@ -80,6 +81,7 @@ class TrainerHandler(BaseHandler):
 
 
 class ClassifierHandler(BaseHandler):
+    tolerance = 0.0001
 
     @coroutine
     def post(self):
@@ -87,7 +89,7 @@ class ClassifierHandler(BaseHandler):
 
         (text, ) = self.get_json('text')
 
-        words = set(text.split())
+        words = set(tokenize(text))
 
         scores = collections.defaultdict(lambda: 0.)
 
@@ -119,7 +121,7 @@ class ClassifierHandler(BaseHandler):
                 )
 
                 scores[label] += math.log(
-                    float(score or 0.1) / total
+                    float(score or self.tolerance) / total
                 )
 
             if scores[label] > best_score:

@@ -8,6 +8,12 @@ Text classification, document classification or document categorization is a pro
 
 <https://en.wikipedia.org/wiki/Document_classification>
 
+There are many use cases of document classifiers in real world:
+
+- Spam filters
+- Web page classification
+- News and and topic categorization
+
 ### Demo
 
 ![klassify](http://i.imgur.com/iG4atNg.gif)

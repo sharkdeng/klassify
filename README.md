@@ -13,6 +13,7 @@ There are many use cases of document classifiers in real world:
 - Spam filters
 - Web page classification
 - News and and topic categorization
+- Sentiment Analysis
 
 ### Demo
 

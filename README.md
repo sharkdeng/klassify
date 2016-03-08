@@ -2,6 +2,12 @@
 
 Redis based text classification service with real-time web interface.
 
+### What is Text Classification
+
+Text classification, document classification or document categorization is a problem in library science, information science and computer science. The task is to assign a document to one or more classes or categories.
+
+<https://en.wikipedia.org/wiki/Document_classification>
+
 ### Demo
 
 ![klassify](http://i.imgur.com/iG4atNg.gif)

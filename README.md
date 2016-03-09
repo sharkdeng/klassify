@@ -21,7 +21,7 @@ There are many use cases of document classifiers in real world:
 
 ### Installing
 
-    pip install klassify
+    sudo pip install klassify
     
 
 If you don't have an nltk corpus, you'll need to run this:
@@ -33,6 +33,15 @@ You'll also need `redis` installed, check if you have it installed by running th
     redis-server
 
 If you get a `command not found`, follow these [instructions](http://redis.io/topics/quickstart)
+
+### Installing with Virtualenv
+
+```
+virtualenv foo
+source foo/bin/activate
+pip install klassify
+python -m klassify
+```
 
 #### Usage
 

@@ -34,7 +34,7 @@ You'll also need `redis` installed, check if you have it installed by running th
 
 If you get a `command not found`, follow these [instructions](http://redis.io/topics/quickstart)
 
-### Installing with Virtualenv
+### Installing on Virtualenv
 
 ```
 virtualenv foo

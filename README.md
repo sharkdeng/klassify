@@ -22,6 +22,12 @@ There are many use cases of document classifiers in real world:
 ### Installing
 
     pip install klassify
+    
+You'll also need `redis` installed, check if you have it installed by running this command:
+
+    redis-server
+
+If you get a `command not found`, follow these [instructions](http://redis.io/topics/quickstart)
 
 #### Usage
 

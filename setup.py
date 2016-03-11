@@ -1,15 +1,16 @@
 from setuptools import setup, find_packages
-
+import networkx
 setup(
     name='klassify',
-    version='0.5',
+    version='0.7',
     description='Redis based text classification service',
     author='Fatih Erikli',
     author_email='fatiherikli@gmail.com',
     url='https://github.com/fatiherikli/klassify',
+    include_package_data=True,
     packages=[
         'klassify',
-        'klassify.backend'
+        'klassify.backend',
     ],
     install_requires=[
         'nltk==3.1',

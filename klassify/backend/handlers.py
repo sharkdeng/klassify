@@ -6,7 +6,7 @@ from tornado.gen import Task, coroutine
 from tornado.web import RequestHandler, HTTPError
 from tornado.websocket import WebSocketHandler
 from tornadoredis import Client
-from backend.tokenizer import tokenize
+from .tokenizer import tokenize
 
 Infinity = float('inf')
 

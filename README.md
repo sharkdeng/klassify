@@ -22,11 +22,11 @@ There are many use cases of document classifiers in real world:
 ### Installing
 
     sudo pip install klassify
-    
+
 
 If you don't have an nltk corpus, you'll need to run this:
 
-    python -c 'import nltk; nltk.download("stopwords")' 
+    python -c 'import nltk; nltk.download("stopwords")'
 
 You'll also need `redis` installed, check if you have it installed by running this command:
 
@@ -60,3 +60,8 @@ Command line options:
   --redis-port                     redis port (default 6379)
 ```
 
+### Installing using Docker
+
+*Note:* This requires installation of both Docker and docker-compose
+
+    docker-compose up

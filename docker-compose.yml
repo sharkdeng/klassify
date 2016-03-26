@@ -1,0 +1,14 @@
+version: "2"
+
+services:
+  klassify:
+    build: .
+    ports:
+      - "8888:8888"
+    links:
+      - redis
+    command: python -m klassify --redis-host=redis
+
+  redis:
+    image: redis:alpine
+    ports: ["6379"]
